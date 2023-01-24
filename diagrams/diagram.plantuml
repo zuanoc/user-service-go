@@ -1,0 +1,17 @@
+@startuml
+cloud "AWS Api Gateway" {
+  [Api Resource]
+}
+
+cloud "Users Api Service Lamba" {
+	[POST /users]
+	[GET /users]
+	[PUT /users]
+}
+
+[Api Client] --> [Api Resource]: send requests
+[Api Resource] --> [POST /users]: forward requests
+[Api Resource] --> [GET /users]: forward requests
+[Api Resource] --> [PUT /users]: forward requests
+
+@enduml

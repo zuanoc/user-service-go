@@ -1,0 +1,5 @@
+.terraform
+.terraform.lock.hcl
+dist
+tf/artifacts
+tf/terraform.tfstate.d
